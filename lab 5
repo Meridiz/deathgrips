@@ -1,0 +1,65 @@
+Задание 1
+#include <iostream>
+using namespace std;
+int main() {
+    float x1, y1, x2, y2;
+    setlocale(LC_ALL, "Russian");
+    cout << "x1 = ";
+    cin >> x1;
+    cout << "y1 = ";
+    cin >> y1;
+    cout << "x2 = ";
+    cin >> x2;
+    cout << "y2 = ";
+    cin >> y2;
+    cout << pow((pow((x2 - x1), 2) + pow((y2 - y1), 2)), 0.5);
+    return 0;
+}
+Задание 2
+#include <iostream>
+using namespace std;
+int main() {
+    float A, B, C;
+    setlocale(LC_ALL, "Russian");
+    cout << "А = ";
+    cin >> A;
+    cout << "В = ";
+    cin >> B;
+    cout << "С = ";
+    cin >> C;
+    cout << "АС = " << abs(A - C) << " BC = " << abs(B - C) << " AC + BC = " << abs(B - C) + abs(A - C);
+    return 0;
+}
+Задание 3
+#include <iostream>
+using namespace std;
+int main() {
+    float A, B, C;
+    setlocale(LC_ALL, "Russian");
+    cout << "А = ";
+    cin >> A;
+    cout << "В = ";
+    cin >> B;
+    cout << "С = ";
+    cin >> C;
+    cout << abs(B - C) * abs(A - C);
+    return 0;
+}
+Задание 4
+#include <iostream>
+using namespace std;
+int main() {
+    float x1, y1, x2, y2;
+    setlocale(LC_ALL, "Russian");
+    cout << "x1 = ";
+    cin >> x1;
+    cout << "y1 = ";
+    cin >> y1;
+    cout << "x2 = ";
+    cin >> x2;
+    cout << "y2 = ";
+    cin >> y2;
+    cout << "Периметр = " << 2 * abs(y1 - y2) + 2 * abs(x1 - x2) << " Площадь = " << abs(y1 - y2) * abs(x1 - x2);
+    return 0;
+}
+Задание 5
