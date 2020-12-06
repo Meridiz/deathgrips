@@ -1,0 +1,56 @@
+задание 1
+#include <iostream>
+using namespace std;
+int main() {
+	float a, P;
+	cin >> a;
+	P = 180;
+	a = a / P;
+	cout << a <<'P';
+	return 0;
+}
+Задание 2
+#include <iostream>
+using namespace std;
+int main() {
+	float a, P;
+	cin >> a;
+	P = 180;
+	a = a * P;
+	cout << a;
+	return 0;
+}
+задание 3
+#include <iostream>
+using namespace std;
+int main() {
+	float a, x, v, y;
+	cin >> a >> x;
+	v = a / x;
+	cout << v;
+	cin >> y;
+	a = v * y;
+	cout << a;
+	return 0;
+}
+задание 4
+#include <iostream>
+using namespace std;
+int main() {
+	float v1, v2, S, T, s;
+	cin >> v1 >> v2 >> S >> T;
+	s = S + v1 * T + v2 * T;
+	cout << s;
+	return 0;
+}
+задание 5
+#include <iostream>
+using namespace std;
+int main() {
+	float A, B, x;
+	cin >> A >> B;
+	x = -B / A;
+	cout << x;
+	return 0;
+}
+задание 6
