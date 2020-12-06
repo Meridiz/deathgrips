@@ -1,0 +1,84 @@
+1 задание
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	cin >> a >> b;
+	c = a;
+	a = b;
+	b = c;
+	cout << a << ' ' << b;
+	return 0;
+}
+2 задание
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c, d;
+	cin >> a >> b >> c;
+	d = a;
+	a = c;
+	c = b;
+	b = d;
+	cout << a << ' ' << b << ' ' << c;
+	return 0;
+}
+3 задание
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c, d;
+	cin >> a >> b >> c;
+	d = a;
+	a = b;
+	b = c;
+	c = d;
+	cout << a << ' ' << b << ' ' << c;
+	return 0;
+}
+4 задание
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y;
+	cin >> x;
+	y = pow(x, 6) - 6 * pow(x, 2) - 7;
+	cout << y;
+	return 0;
+}
+5 задание 
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y;
+	cin >> x;
+	y = 4 * pow((x - 3), 6) - 7 * pow((x - 3), 3) +2;
+	cout << y;
+	return 0;
+}
+6 задание
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cin >> A;
+	B = A * A; 
+	A = B * B;
+	B = A * A;
+	cout << B;
+	return 0;
+}
+7 задание
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B, C;
+	cin >> A;
+	B = A * A;
+	C = B * A;
+	A = C * C;
+	B = A * A;
+	A = C * B;
+	cout << A;
+	return 0;
+}
