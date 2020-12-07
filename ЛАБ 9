@@ -75,3 +75,28 @@ int main() {
 	}
 	return 0;
 }
+ЗАДАЧА 4
+#include <iostream>
+using namespace std;
+int main() {
+	float N, S, B, C, A;
+	cin >> A >> B >> C;
+	N = floor(B / C) * floor(A / C);
+	S = A*B - pow(C,2) * (floor(B / C) * floor(A / C));
+	cout << N << S;
+	return 0;
+}
+ЗАДАЧА 5
+#include <iostream>
+using namespace std;
+int main() {
+	int N, S;
+	cin >> N;
+	if (N % 100 > 0) {
+		cout << N / 100 + 1;
+	}
+	else {
+		cout << N / 100;
+	}
+	return 0;
+}
