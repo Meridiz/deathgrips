@@ -1,0 +1,47 @@
+Задание 1
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cin >> A >> B;
+	if ((A > 2) &(B <= 3)) {
+	cout << "YES OF COURSE";
+	}
+	return 0;
+}
+задание 2
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B, C;
+	cin >> A >> B >> C;
+	if ((B > A) & (C > B)) {
+	cout << "YES OF COURSE";
+	}
+	return 0;
+}
+ЗАДАНИЕ 3
+#include <iostream>
+using namespace std;
+int main() {
+	int A;
+	cin >> A;
+	if ((A% 10 != 0) & (A / 100 == 0) & (A % 2 == 0) ) {
+	cout << "YES OF COURSE";
+	}
+	return 0;
+}
+ЗАДАНИЕ 4
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B, C;
+	cin >> A;
+	B = A / 100;
+	C = (A / 10) % 10;
+	A = A % 10;
+	if (((B < C) & (C < A)) || ((B > C) & (C > A))) {
+	cout << "YES OF COURSE";
+	}
+	return 0;
+}
