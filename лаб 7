@@ -54,3 +54,13 @@ int main() {
 	return 0;
 }
 задание 6
+#include <iostream>
+using namespace std;
+int main() {
+	float A1, B1, C1, A2, B2, C2, x, y;
+	cin >> A1 >> B1 >> C1 >>  A2 >> B2>>C2;
+	y = (((C1 * A2) - (C2 * A1)) / ((B1 * A2) - (A1 * B2)));
+	x = (C1 - B1 * y) / A1;
+	cout << x << y;
+	return 0;
+}
