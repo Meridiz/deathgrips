@@ -1,0 +1,77 @@
+задача 1
+#include <iostream>
+using namespace std;
+int main() {
+	int N;
+	cin >> N;
+	N = N % 60;
+	cout << N;
+	return 0;
+}
+задача 2
+#include <iostream>
+using namespace std;
+int main() {
+	int K;
+	setlocale(LC_ALL, "Russian");
+	cin >> K;
+	while (K >= 7) {
+		K -= 7;
+	}
+	if (K == 6) {
+		cout << "суббота";
+	}
+	if (K == 5) {
+		cout << "пятница";
+	}
+	if (K == 4) {
+		cout << "четверг";
+	}
+	if (K == 3) {
+		cout << "среда";
+	}
+	if (K == 2) {
+		cout << "вторник";
+	}
+	if (K == 1) {
+		cout << "понедельник";
+	}
+	if (K == 0) {
+		cout << "воскресенье";
+	}
+	return 0;
+}
+задача 3
+#include <iostream>
+using namespace std;
+int main() {
+	int K, N;
+	setlocale(LC_ALL, "Russian");
+	cin >> K >> N;
+	K += N - 1;
+	while (K > 7) {
+		K -= 7;
+	}
+	if (K == 6) {
+		cout << "суббота";
+	}
+	if (K == 5) {
+		cout << "пятница";
+	}
+	if (K == 4) {
+		cout << "четверг";
+	}
+	if (K == 3) {
+		cout << "среда";
+	}
+	if (K == 2) {
+		cout << "вторник";
+	}
+	if (K == 1) {
+		cout << "понедельник";
+	}
+	if (K == 7) {
+		cout << "воскресенье";
+	}
+	return 0;
+}
