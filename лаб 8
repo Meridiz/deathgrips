@@ -1,0 +1,47 @@
+Задание 1
+#include <iostream>
+using namespace std;
+int main() {
+	float x;
+	cin >> x;
+	int x1 = x / 1024;
+	cout << x1;
+	return 0;
+}
+Задание 2
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cin >> A >> B;
+	cout << B;
+}
+Задание 3
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cin >> A >> B;
+	cout << A - B;
+}
+Задание 4 
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cin >> A;
+	B = A % 10 * 10;
+	B = B + A / 10;
+	cout << B;
+}
+Задание 5
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B, C;
+	cin >> A;
+	B = A / 100;
+	C = A % 100 * 10;
+	B = C + B;
+	cout << B;
+}
