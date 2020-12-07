@@ -14,7 +14,7 @@ using namespace std;
 int main() {
 	int A, B;
 	cin >> A >> B;
-	cout << B;
+	cout << floor(A/B);
 }
 Задание 3
 #include <iostream>
