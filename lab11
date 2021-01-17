@@ -1,0 +1,133 @@
+задание 1
+#include <iostream>
+using namespace std;
+int main() {
+	int A, B;
+	cin >> A >> B;
+	if (A != B) {
+		if (A > B) {
+			B = A;
+			cout << A << ' ' << B;
+		}
+		else {
+			A = B;
+			cout << A << ' ' << B;
+		}
+	}
+	else {
+		A = B = 0;
+		cout << A << ' ' << B;
+	}
+	return 0;
+}
+задание 2
+#include <iostream>
+using namespace std;
+int main() {
+	int A,B,C;
+	cin >> A >> B >> C;
+	if ((A >= B) || (A >= C)) {
+		if (C >= B) {
+			cout << A + C;
+		}
+		else {
+			cout << B + A;
+		}
+	}
+	else {
+		cout << B + C;
+	}
+	return 0;
+}
+ЗАДАНИЕ 3
+#include <iostream>
+using namespace std;
+int main() {
+	int A,B,C;
+	cin >> A >> B >> C;
+	if (abs(A-B) <= abs(A - C)){
+		cout << B << ' ' << abs(A - B);
+	}
+	else {
+		cout << C <<' ' << abs(A - C);
+	}
+	return 0;
+}
+ЗАДАНИЕ 4
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int x, y;
+	cout << "X:";
+	cin >> x;
+	cout << "Y:";
+	cin >> y;
+
+	if (x > 0 && y > 0) {
+		cout << "Первая четверть";
+	}
+	else if (x < 0 && y>0) {
+		cout << "Вторая четверть";
+	}
+	else if (x < 0 && y < 0) {
+		cout << "Третья четверть";
+	}
+	else
+		cout << "Четвертая четверть";
+}
+задание 5
+#include <iostream>
+using namespace std;
+int main() {
+	int A;
+	setlocale(LC_ALL, "Russian");
+	cin >> A;
+	if (A > 0) {
+		if (A % 2 == 0) {
+			cout << "положительное четное число";
+		}
+		else {
+			cout << "положительное нечетное число";
+		}
+	}
+	if (A < 0) {
+		if (A % 2 == 0) {
+			cout << "отрицательное четное число";
+		}
+		else {
+			cout << "отрицательное нечетное число";
+		}
+	}
+	if (A == 0) {
+		cout << "Нулевое число";
+	}
+	
+	return 0;
+}
+задание 6
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+ setlocale(LC_ALL, "Russian");
+ int a;
+ 
+ cout << "'a' в диапозоне: 1-999" << endl;
+ cout << "a = "; cin >> a;
+ 
+ if (a % 2 == 0);
+ else cout << "не";
+ cout << "четное ";
+ if (a / 100 > 0 && a / 100 < 10) cout << "трехзначное ";
+ else if (a / 10 > 0 && a / 10 < 10) cout << "двухзначное ";
+ else if (a / 10 == 0) cout << "однозначное ";
+ cout << "число!!!";
+ 
+ cout << endl << endl;
+ 
+ system("pause");
+ return 0;
+}
