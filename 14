@@ -1,0 +1,130 @@
+задание 1
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int a, b;
+    cout<<"A:";
+    cin>>a;
+    cout << "B:";
+    cin >> b;
+ 
+    int i, i2;
+    for (i = a; i <= b; ++i) {
+        for (i2 = 1; i2 <= i; ++i2)
+            cout << i <<" ";
+    }
+ 
+    return 0;
+}
+задание 2
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ setlocale(LC_ALL, "Rus");
+ int a, b;
+ cout<<"A:";
+ cin>>a;
+ cout<<"B:";
+ cin>>b;
+ 
+ int temp = a;
+ while (temp >= 0) {
+ temp -= b;
+ }
+ cout<< temp + b;
+}
+задание 3
+# include <iostream>
+# include <windows.h>
+# include <cmath>
+ 
+using namespace std;
+ 
+int main ()
+ 
+{
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+ 
+  int N;
+  int K= 0;
+  int S= 0;
+  cout << "Введите целое число N (>1): ";
+  cin >> N;
+  while(S <= N) {
+   ++K;
+   S += K;   
+  }
+  cout << "Наименьшее из целых чисел K, для которых сумма 1 + 2 + ... + K будет больше или равна N:   " << "K= " << K << endl;
+  system ("pause");
+  return 0;
+}
+задание 4
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float p;
+    cout << "P:";
+    cin >> p;
+    int k = 1;
+    float s = 1000;
+    while (s <= 1100) {
+        ++k;
+        s += s * p / 100;
+    }
+    cout<<"k:"<<k<<endl<<"nS:"<< s;
+    return 0;
+}
+задание 5
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int a, b;
+    cout << "A:";
+    cin >> a;
+    cout << "B:";
+    cin >> b;
+    while ((a != 0) & (b != 0)) {
+        if (a > b) a = a % b;
+        else b = b % a;
+    }
+    cout<< a + b;
+    return 0;
+}
+задание 6
+#include <iostream>
+using namespace std;
+# include <iostream>
+# include <windows.h>
+# include <cmath>
+int main()
+
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	int N;
+	int a1 = 1, a2 = 1;
+	int a;
+	cout << "Введите N: ";    cin >> N;
+	cout << "Последовательность Фибоначи:  ";
+	cout << a1 << " " << a2 << " ";
+	for (int i = 3; i <= N; ++i) {
+		a = a1 + a2;
+		a1 = a2;
+		a2 = a;
+		cout << a << " ";
+	}
+	cout << endl;
+
+
+	system("pause");
+	return 0;
+}
