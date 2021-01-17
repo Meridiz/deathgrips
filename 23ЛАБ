@@ -1,0 +1,90 @@
+1 ЗАДАНИЕ
+#include <iostream>
+using namespace std;
+int main()
+{
+	char C;
+	cin >> C;
+	cout << char(C - 1) << " " << char(C + 1);
+	return 0;
+}
+2 ЗАДАНИЕ 
+#include <iostream>
+#include <cstring>
+using namespace std;
+ 
+int main() {
+    // Исходная строка
+    char str[] = "uuuuuuuuuuuuuuuuuuu";
+    for (auto i = 0; i < strlen(str); i++)
+        cout << str[i] << " ";
+    cout << endl;
+ 
+    return 0;
+}
+3 ЗАДАНИЕ
+#include <string>
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main() {
+	string s;
+	getline(cin, s);
+	for (size_t i = 0; i < s.length(); i++);
+}
+4 задание
+#include <iostream>
+#include <cstring>
+ 
+void insert(char* buffer, unsigned pos, char c)
+{
+    for(unsigned i = strlen(buffer) + 1; i > pos; --i)
+        buffer[i] = buffer[i - 1]; 
+    buffer[pos] = c;
+}
+ 
+int main()
+{
+    std::cout << "input line: ";
+ 
+    const int BUF_SIZE = 256;
+    char* buffer = new char[BUF_SIZE];
+ 
+    std::cin.getline(buffer, BUF_SIZE);
+ 
+    std::cout << "input character: ";
+    char c;
+    std::cin >> c;
+ 
+    for(unsigned i = 0; i < strlen(buffer); ++i)
+        if(c == buffer[i])
+        {
+            insert(buffer, i, c);
+            ++i;
+        }
+ 
+    std::cout << buffer << std::endl;
+ 
+    delete[] buffer;
+    return 0;
+}
+задание 5
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+    string s1(" i go to go og qwertygo !togou"), s2("go");
+    int count = 0;
+ 
+    for(string::size_type i = 0; i < s1.length(); i++)
+        if(s1[i] == s2[0])
+            if(s1.substr(i, s2.length()) == s2)
+            {
+                count++;
+                i += s2.length() - 1;
+            }
+ 
+    cout << count;
+    return 0;
+}
